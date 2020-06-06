@@ -1,0 +1,381 @@
+*{
+    font-family: Arial;
+    
+    
+}
+.containe{
+    width: 85%;
+    margin: 0 auto;
+    
+}
+a{
+    color: yellow;
+}
+.btn{
+    background-color:rgba(247, 4, 4);
+    font-size: 16px;
+    padding: 1px 11px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+li{
+    list-style-type: none;
+}
+h1{
+    text-align: center;
+}
+
+.l-height{
+    line-height: 60px;
+}
+.logo{
+   
+    padding-left: 20px;
+    margin-top: 15px;
+}
+.nav1{
+    display: flex;
+    background-color: black ;
+    color: white;
+} 
+/*CSS the dau trang*/
+.logo{
+    width: 40%;
+} 
+.timkiem{
+    width: 36%;
+    padding-top: 12px;
+    line-height: 22px;
+    
+    
+}
+.cuahang{
+    width: 20%;    
+} 
+.cuahang a{
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    
+}
+.lienhe{
+    width: 30%;   
+}
+.lienhe ul{
+    padding-top: 6px;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+.timkiem a{
+    width: 36px;
+    padding: 6px 8px;
+    color: white;
+    background-color: gray;
+    border-radius: 3px; 
+}
+.timkiem input{
+    color: white;
+}
+/*CSS the nav*/
+
+.nav2{
+    background-color:rgb(36, 32, 32) ;
+    color: white;
+    line-height: 50px;
+    display: flex;
+    height: 50px;
+}
+.nav2 ul{
+    display: flex;
+    margin: 0;
+    
+}
+.nav2 a i{
+    padding-left: 20px;
+   
+}
+
+.nav2 > ul > li{
+    width: auto;
+    min-width: 155px;
+    text-align: center;
+    /*padding: 10px 15px;*/
+    
+}
+.nav2 > ul > li > a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+/*CSS nav da cap*/
+
+.ss {
+    display: inline-block;
+    width: 100%; 
+} 
+.ss li{
+    display: inline-block;
+    position: relative; 
+}
+.ss li a{
+    display: inline-block;
+    text-decoration: none; 
+    letter-spacing: 0px;
+    padding: 0 20px;
+    transition: all ease 0.5s;
+}
+.ss li a:hover{
+    background-color: red;
+    color: #fff;
+}
+.ss li.sp ul{
+    background-color: #fff;    
+    position: absolute;
+    left: 0;
+    padding-left: 0;
+    min-width: 230px;
+    display: none;
+}
+.ss li.sp ul li a{
+    color: #000;
+    width: 230px;
+    text-align: left;
+    padding: 0;
+    padding-left: 10px;
+}
+.ss li.sp:hover ul{
+    display: block;
+    z-index: 12;
+}
+
+/* CSS banner*/
+ 
+section.banner{
+    width: 100%;
+    background-repeat: none;
+}
+section.banner img {
+    width:100%;
+    top:0;
+    left:0;
+    vertical-align: middle;
+}
+ 
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 140px;
+    bottom: 140px;
+    width: 5%;  
+}
+.carousel-item .btn {
+    position: absolute;
+    top: 90%;
+    left: 89%;
+    
+  }
+  .carousel-item .btn a{
+      color: yellow;
+  }
+  
+  .containe .btn:hover {
+    background-color: gray;
+    padding: 1px 15px;
+  }
+  /* CSS Khuyen mai*/
+  section.khuyenmai{
+      display: flex;  
+       
+  }
+  .left{
+      width: 50%;
+      margin: 10px 0px;
+  }
+  .left iframe{
+      width: 100%;
+  }
+  .right{
+      width: 50%;
+      margin: 10px 0px;
+ }
+  .right image{
+     width:  100%;
+  }
+ 
+
+  /* CSS san pham noi bat*/
+ 
+  
+.production {
+    background-color: rgb(241, 232, 232);
+    color: gray;
+    text-align: center;
+    padding: 15px 30px 90px;
+    position: relative;
+    }
+    .title-mod h1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    background: rgb(241, 232, 232);
+    padding: 0px 18px;
+    color: #232323;
+    display: inline-table;
+    }
+   
+    
+    .title-mod::after{
+        content: ' ';
+        width: 100%;
+        height: 1px;
+        background: rgb(182, 15, 15);
+        top: 37px;
+        left: 0px;
+        position: absolute;
+       
+    }
+    .w3-row-padding{
+        display: flex;
+    }
+  /* CSS san pham tuong tu*/  
+  section.production-same{
+     
+    background-color: rgb(241, 232, 232);
+    text-align: center;
+    color: gray;
+    margin-bottom: 50px;
+}
+.title-mod-same::after{
+    content: " ";
+    height: 2px;
+    width: 4%;
+    background-color: gray;
+    display: block;
+    margin: 20px auto 50px ;
+   
+}
+div.pros{
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;  
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    
+}
+div.pro{
+    
+    width: 33.3%;
+    
+}
+div.pro img{
+    max-width: 100%;
+    padding: 20px 15px;
+}
+div.pro img:hover{
+    transform: scale(1.05);
+    transition: all ease 0.6s;
+    
+}
+div.giaxe{
+    display: flex;
+    margin-bottom: 10px;
+}
+div.giaxe h5{
+    
+    width: 70%;
+}
+/*CSS baohanh*/
+section.baohanh{
+    margin-bottom: 50px;
+}
+.items{
+    background-color: rgb(241, 232, 232);
+    display: flex;
+}
+.item{
+    width: 33.33%;
+    padding: 10px;
+}
+.item div{
+    text-align: center;
+    color: gray;
+    padding: 10px;
+    background-color: rgb(221, 218, 218);
+    border-radius: 4px;
+    
+    
+}
+.item div img{
+   max-width: 100%;
+  
+}
+
+div.item > div:hover {
+    box-shadow: 4px 4px 4px 4px gray;    
+}
+div.item h4{
+    margin-top: 10px;
+}
+/*CSS diễn đàn*/
+section.diendan{
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+}
+div.evts{
+    
+    display: flex;
+}
+div.evt{
+    width: 25%;
+    padding: 3px;
+}
+div.evt iframe{
+    width: 100%;
+}
+/*CSS footer*/
+section.finish{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+.fnleft{
+    width: 50%;
+    margin-top: 20px;
+}
+.fnright{
+    margin: 20px;
+    width: 50%;
+    
+}
+.fnright div iframe{
+   max-width: 100%;
+  max-height: 260px;
+}
+/*CSS nút đầu trang*/
+.lentop{
+    position: fixed;
+    background-color: rgb(51, 51, 51, 0.3);
+    right: 20px;
+    bottom: 20px;
+    border-radius: 6px;
+    display: none;
+}
+.lentop a  {
+    display: block;
+    padding: 11px 17px;
+}
+.lentop a i{
+    font-size: 27px;
+}
+/*show image*/
+#imgModalid{
+    width: 100%;
+    scale: 1.7;
+}
+
+
+ 
+

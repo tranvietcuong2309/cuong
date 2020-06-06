@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <title>xwatch</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/car-solid.svg">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+        <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/xwatch.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/xwatch.js"></script>
+    </head>
+    <body class="containe" id="container" onload="init()" >
+        <div class="lentop" id="lentop">
+            <a href="javascript:;" onclick="lentop()"><i class="fa-arrow-circle-up fa" title="len đầu trang" ></i></a>
+
+            </div>
+        <header class="navi" id="myHeader" >
+            <nav class="nav1">
+                <div class="logo" id="logo">
+                    <img src="./images/honda/logo1.png" alt="logothuonghieu">
+                </div>
+                <div class="timkiem">
+                    <input type="text" style="background-color:black;"   placeholder="tìm kiếm...">
+                    <a href="#"><i class="fa fa-search"></i></a>   
+                </div>
+                <div class="cuahang l-height">
+                    <i class="fa fa-map-marker" ></i>
+                        <a href="#finish" onclick="go(this)"> Cửa hàng</a>
+                </div>
+                <div class="lienhe">
+                    <ul>
+                        <li><i class="fa fa-phone"></i> Phone: 098704413</li>
+                        <li><i class="fa fa-envelope"></i> Email: <a style="color: gray;" href="mailto:contact@gmail.com">contact@gmail.com</a></li>
+                    </ul>
+                </div> 
+            </nav>
+            <nav class="nav2">
+                <a href="#"><i class="fa fa-home" style="font-size: 38px;color: white;"></i></a> 
+                <ul class="ss"> 
+                    <li class="sp"><a href="#">Giới thiệu</a>
+                        <ul>
+                            <li><a href="#"> Giới thiệu Honda Việt Nam</a></li>
+                            <li><a href="#"> Lịch sử phát triển</a></li>
+                            <li><a href="#"> Thư của Tổng giám đốc</a></li>
+                            <li><a href="#"> Triết lí Honda</a></li>
+                        </ul></li>
+                    <li><a href="#sanpham" onclick="go(this)">Sản phẩm</a></li>
+                    <li><a href="#baohanh" onclick="go(this)">Bảo hành</a></li>
+                    <li><a href="#sanpham" onclick="go(this)">Phụ kiện</a></li>
+                    <li><a href="#diendan" onclick="go(this)">Diễn đàn</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li ><a href="#" data-toggle="modal" data-target="#myModal" >Góp ý</a></li>
+                </ul>
+            </nav>
+             
+        </header>
+        <section class="banner">
+            <div id="demo" class="carousel slide" data-ride="carousel" data-interval="4000" >
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+              
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/honda/banner/banner1.jpg" alt="Los Angeles">
+                    <button class="btn"><a href="#" target="_blank">CHI TIẾT</a></button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/honda/banner/banner2.jpg" alt="Chicago">
+                    <button class="btn"><a href="https://www.facebook.com/" target="_blank">CHI TIẾT</a></button>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/honda/banner/banner3.jpg" alt="New York">
+                    <button class="btn"><a href="https://completejavascript.com/smooth-scrolling-trang-web-voi-jquery" target="_blank">CHI TIẾT</a></button>
+                  </div>
+                </div>
+              
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+              
+              </div>
+        </section>
+        
+        <section class="khuyenmai" id="introduction">
+            <div class="left">
+                <iframe  height="300" src="https://www.youtube.com/embed/5WkFfhQving" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                 picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="right">
+                <div>
+                    <img height="300" src="images/honda/khuyenmai/km.PNG" alt="km1"> 
+                </div>     
+            </div>
+        </section>
+        <br>
+        <section class="production" id="sanpham">
+            <div class="title-mod">
+                <h1>SẢN PHẨM NỔI BẬT</h1>
+            </div>
+            <div>
+                <div class="w3-container">
+                    <br><br>
+                    <p>Thống kê dựa trên doanh số tiêu thụ trong tháng và tiêu chí bình chọn của khách hàng.</p>
+                </div>
+                  
+                  <div class="w3-content" style="max-width:1200px">
+                    <img class="mySlides" src="images/honda/gioithieu_civic.jpg" style="width:100%;display:none">
+                    <img class="mySlides" src="images/honda/gioithieu_cr_v.jpg" style="width:100%">
+                    <img class="mySlides" src="images/honda/gioithieu_city.jpg" style="width:100%;display:none">
+                    <img class="mySlides" src="images/honda/gioithieu_civic.jpg" style="width:100%;display:none">
+                    <img class="mySlides" src="images/honda/gioithieu_cr_v.jpg" style="width:100%;display:none">
+                                
+                    <div class="w3-row-padding w3-section">
+                      <div class="w3-col s4">
+                        <img class="demo w3-opacity w3-hover-opacity-off" src="images/honda/gioithieu_civic.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                      </div>
+                      <div class="w3-col s4">
+                        <img class="demo w3-opacity w3-hover-opacity-off" src="images/honda/gioithieu_cr_v.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                      </div>
+                      <div class="w3-col s4">
+                        <img class="demo w3-opacity w3-hover-opacity-off" src="images/honda/gioithieu_city.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                      </div>
+                      <div class="w3-col s4">
+                        <img class="demo w3-opacity w3-hover-opacity-off" src="images/honda/gioithieu_city2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+                      </div>
+                      <div class="w3-col s4">
+                        <img class="demo w3-opacity w3-hover-opacity-off" src="images/honda/gioithieu_accord.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+                      </div>
+                      
+                    </div>
+                    <div class="noidung">
+                        <div class="mySlide info" style="width:100%;display:none">
+                            <h4>HONDA CITY 2020</h4>
+                            <h5>Honda City 2020 – mẫu xe Sedan hạng B ăn khách nhất tại Việt Nam và các nước Đông Nam Á </h5>
+                            <p>Với thiết kế hoàn toàn mới, đầy phong cách và cá tính, Honda City 2020 khoác lên trên mình
+                                “chiếc áo mới” đầy cuốn hút và mạnh mẽ từ mọi góc nhìn. Chiếc xe mang phong cách thể thao,
+                                trẻ trung và năng động. Ngoài vẻ bề ngoài tươi mới, Honda City 2020 còn được trang bị hàng 
+                                loạt các tính năng mới đầy tiện nghi và hiện đại, hướng đến sự tiện nghi và thoải mái cho
+                                người sử dụng, giúp tạo cảm giác an tâm và hài lòng nhất cho tất cả các khách hàng kể cả
+                                những khách hàng khó tính nhất.</p>
+                        </div>
+                        <div class="mySlide info">
+                            <h4>HONDA DIANA 2020</h4>
+                            <h5>Honda DIANA 2020 – mẫu xe Sedan hạng C bán chạy nhất tại Việt Nam. </h5>
+                            <p> Ngoài vẻ bề ngoài tươi mới, Honda City 2020 còn được trang bị hàng 
+                                loạt các tính năng mới đầy tiện nghi và hiện đại, hướng đến sự tiện nghi và thoải mái cho
+                                người sử dụng, giúp tạo cảm giác an tâm và hài lòng nhất cho tất cả các khách hàng kể cả
+                                những khách hàng khó tính nhất.Với thiết kế hoàn toàn mới, đầy phong cách và cá tính, Honda
+                                 City 2020 khoác lên trên mình “chiếc áo mới” đầy cuốn hút và mạnh mẽ từ mọi góc nhìn. Chiếc 
+                                 xe mang phong cách thể thao,trẻ trung và năng động. </p>
+                                 
+                        </div>
+                        <div class="mySlide info" style="width:100%;display:none">
+                            <h4>Honda HRV 2020</h4>
+                            <h5>Honda HRV 2020 – Siêu mỏng, siêu thấm được chị em tin dùng. </h5>
+                            <p>Chiếc xe mang phong cách thể thao,trẻ trung và năng động.Với thiết kế hoàn toàn mới, đầy phong cách và cá tính, Honda City 2020 khoác lên trên mình
+                                “chiếc áo mới” đầy cuốn hút và mạnh mẽ từ mọi góc nhìn. Chiếc xe mang phong cách thể thao,
+                                trẻ trung và năng động. Ngoài vẻ bề ngoài tươi mới, Honda City 2020 còn được trang bị hàng 
+                                loạt các tính năng mới đầy tiện nghi và hiện đại, hướng đến sự tiện nghi và thoải mái cho
+                                người sử dụng, giúp tạo cảm giác an tâm và hài lòng nhất cho tất cả các khách hàng kể cả
+                                những khách hàng khó tính nhất.</p>
+                        </div>
+                        <div class="mySlide info" style="width:100%;display:none">
+                            <h4>HONDA CRV 2020</h4>
+                            <h5>Honda CRV 2020 hoàn toàn mới – Động cơ Turbo vận hành mạnh mẽ – An toàn vượt trội</h5>
+                            <p>Với thiết kế hoàn toàn mới, đầy phong cách và cá tính, Honda City 2020 khoác lên trên mình
+                                “chiếc áo mới” đầy cuốn hút và mạnh mẽ từ mọi góc nhìn. Chiếc xe mang phong cách thể thao,
+                                trẻ trung và năng động. Ngoài vẻ bề ngoài tươi mới, Honda City 2020 còn được trang bị hàng 
+                                loạt các tính năng mới đầy tiện nghi và hiện đại, hướng đến sự tiện nghi và thoải mái cho
+                                người sử dụng, giúp tạo cảm giác an tâm và hài lòng nhất cho tất cả các khách hàng kể cả
+                                những khách hàng khó tính nhất.</p>
+                        </div>
+                        <div class="mySlide info" style="width:100%;display:none">
+                            <h4>Honda Jazz 2020</h4>
+                            <h5>Honda Jazz 2020- Mẫu hatchback hạng B mới nhất của Honda tại Việt Nam. </h5>
+                            <p>Với thiết kế hoàn toàn mới, đầy phong cách và cá tính, Honda City 2020 khoác lên trên mình
+                                “chiếc áo mới” đầy cuốn hút và mạnh mẽ từ mọi góc nhìn. Chiếc xe mang phong cách thể thao,
+                                trẻ trung và năng động. Ngoài vẻ bề ngoài tươi mới, Honda City 2020 còn được trang bị hàng 
+                                loạt các tính năng mới đầy tiện nghi và hiện đại, hướng đến sự tiện nghi và thoải mái cho
+                                người sử dụng, giúp tạo cảm giác an tâm và hài lòng nhất cho tất cả các khách hàng kể cả
+                                những khách hàng khó tính nhất.</p>
+                        </div>
+                            
+                    </div>
+                  </div>
+            </div>
+            
+        </section>
+        <section class="production-same">
+            <div class="title-mod-same"> 
+                <h2 class="underline">SẢN PHẨM TƯƠNG TỰ</h2>
+            </div>
+            <div class="pros">
+                <div class="pro">
+                    <img src="images/honda/gioithieu_city2.jpg" alt="1">
+                    <div class="giaxe">
+                        <h5>- Mẫu xe: Honda Vios </h5>
+                    <button class="btn"><a href="https://hondahanoivn.com/">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="images/honda/gioithieu_city.jpg" alt="1">
+                    <div class="giaxe">
+                        <h5>- Mẫu xe: Honda Partten </h5>
+                    <button class="btn"><a href="https://hondahanoivn.com/">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="images/honda/gioithieu_city2.jpg" alt="1">
+                    <div class="giaxe">
+                        <h5>- Mẫu xe: Honda Diana </h5>
+                    <button class="btn"><a href="https://hondahanoivn.com/">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="images/honda/gioithieu_civic.jpg" alt="1">
+                    <div class="giaxe">
+                        <h5>- Mẫu xe: Honda Wayalpha </h5>
+                    <button class="btn"><a href="https://hondahanoivn.com/">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="images/honda/gioithieu_cr_v.jpg" alt="1">
+                    <div class="giaxe">
+                        <h5>- Mẫu xe: Honda Civic </h5>
+                    <button class="btn"><a href="https://hondahanoivn.com/">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="images/honda/gioithieu_accord.jpg" alt="1">
+                    <div class="giaxe">
+                        <h5>- Mẫu xe: Honda Suzuki </h5>
+                    <button class="btn"><a href="https://hondahanoivn.com/">Chi tiết</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="baohanh production" id="baohanh">
+            <div class="title-mod">
+                <h1>CHẾ ĐỘ BẢO HÀNH</h1>    
+            </div>
+            <div>
+                <div class="w3-container" style="text-align: left;">
+                    <br><br>
+                    <p style="text-align: center;">Được xếp hạng 1 trong hãng xe có chế độ bảo hành tốt nhất châu Á theo Vnexxpress.</p>
+                    <h5 style="font-weight:bold">Honda Việt Nam đang thực hiện chính sách bảo hành 3 năm (hoặc 30.000km) với 06 lần KTĐK cho xe mà bạn mới mua nhằm đảm bảo chất lượng. Theo đó, bạn có thể tham khảo thời gian KTĐK theo chương trình bảo hành này để chủ động sắp xếp lịch kiểm tra, bảo dưỡng cho xe mới của mình.</h5>
+                    <h5 style="font-weight:bold">Quyền lợi, nghĩa vụ khách hàng:</h5>
+                    <p>Để sử dụng xe an toàn, thoải mái và đảm bảo quyền lợi bảo hành, việc kiểm tra và bảo dưỡng xe là hết sức cần thiết. Quý khách vui lòng chú ý những điểm sau đây:</p>
+                    <p>Sử dụng xe theo đúng phương pháp đã hướng dẫn trong sách.</p>
+                    <p>Tiến hành “kiểm tra trước khi vận hành”.</p>
+                    <p>Thực hiện kiểm tra định kỳ đúng lịch theo sách hướng dẫn sử dụng và trong sổ bảo hành này.</p>
+                    <p>Thay thế các bộ phận định kỳ, các chất lỏng, dầu mỡ theo đúng sách hướng dẫn sử dụng đã quy định.</p>
+                    <p>Ký tên, xác nhận đầy đủ thông tin về việc đã thực hiện kiểm tra định kỳ trong cuốn sổ Bảo hành.</p>
+                    <h5 style="font-weight:bold">Loại xe và thời hạn bảo hành:</h5>
+                    <p>Loại xe được cung cấp bởi Honda Việt Nam và được bán từ các Cửa hàng bán xe và dịch vụ do Honda Việt Nam ủy nhiệm. </p>
+                    <h5 style="font-weight:bold">Một số hình ảnh:</h5>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <div>
+                        <img src="images/honda/baohanh/10.jpg" alt="gioithieu">
+                        <h5>Chi nhánh Từ Liêm</h5>
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="images/honda/baohanh/5.jpg" alt="gioithieu">
+                        <h5>Chi nhánh Bình Thạch</h5>
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="images/honda/baohanh/9.jpg" alt="gioithieu">
+                        <h5>Chi nhánh Tây Hồ</h5>
+                        
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section class="diendan production" id="diendan">
+            <div class="title-mod">
+                <h1>DIỄN ĐÀN</h1>    
+            </div>
+            <div>
+                <div class="w3-container" style="text-align: left;">
+                    <br><br>
+                    <p style="text-align: center;">Chia sẻ khoảng khắc cùng Honda xây dựng cộng đồng vì xã hội.</p>
+                    <h5 style="font-weight:bold">Honda vì Cộng đồng</h5>
+                    <h5 style="font-weight:bold">Các hoạt động và chuơng trình vì Cộng đồng được tổng hợp qua các video :</h5>
+                    
+                </div>
+                <div class="evts">
+                    <div class="evt">
+                        <iframe  height="215" 
+                        src="https://www.youtube.com/embed/qWF6qpfi2ts"
+                         frameborder="0" 
+                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="evt">
+                        <iframe  height="215" 
+                        src="https://www.youtube.com/embed/qWF6qpfi2ts"
+                         frameborder="0" 
+                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="evt">
+                        <iframe  height="215" 
+                        src="https://www.youtube.com/embed/qWF6qpfi2ts"
+                         frameborder="0" 
+                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="evt">
+                        <iframe  height="215" 
+                        src="https://www.youtube.com/embed/qWF6qpfi2ts"
+                         frameborder="0" 
+                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            
+        </section>
+      
+        
+        <section>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Góp ý</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <div class="form-group">
+                          <label for="txtEmail">Email hoặc số điện thoại:</label>
+                          <input type="email" id="txtEmail" placeholder="Nhập email, số điện thoại*" class="form-control"  >
+                      </div>
+                      <div class="form-group">
+                        <label for="txtText">Tiêu đề:</label>
+                        <input type="text" id="txtText" placeholder="Tiêu đề*" class="form-control"  >
+                    </div>
+                    <div class="form-group">
+                        <label for="txtCont">Nội dung góp ý:</label>
+                        <textarea  id="txtCont" class="form-control" ></textarea>
+                    </div>
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Success</button>  
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section class="finish" id="finish">
+            <div class="fnleft">
+                <ul>
+                    <li style="font-weight: bold;">Công ty TNHH Motor N.A Việt Nam</li>
+                    <li>Địa chỉ: 197A Nghi Tàm, Phường Yên Phụ, Quận Tây Hồ, Hà Nội</li>
+                    <li>Điện thoại: (84-24) 3 719 2299   Fax: (84-24) 3 719 2890</li>
+                    <li style="color: red;">Mã số thuế: 0101787217</li>
+                    <li style="color: red;">Số tài khoản: 011.000.0000.6668</li>
+                    <li style="color: red;">Tại: Ngân hàng TMCP Đông Nam Á (SeABank)</li>
+                    <li style="color: red;">Chi nhánh Láng Hạ, 22 Láng Hạ, Đống Đa, Hà Nội</li>
+                    <li>Giờ làm việc: từ 8h00 đến 17h00 hàng ngày (Dịch vụ BD, sửa chữa nghỉ chiều Chủ nhật)</li>
+                    <li>Nghỉ các ngày lễ và Tết theo quy định</li>
+                    <li><i class="fa fa-map-marker" ></i>&ensp; Bản đồ</li>
+                </ul>
+            </div>
+            <div class="fnright">
+                <div id="map" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+                    1d3723.8977453149246!2d105.83245751424809!3d21.036777085994046!
+                    2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                    1s0x3135aba15ec15d17%3A0x620e85c2cfe14d4c!2zTMSDbmcgSOG7kyBDaMOtIE1pbmg!
+                    5e0!3m2!1svi!2sus!4v1501056274257" width="800" 
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
+                    
+                  </div>
+            </div>
+        </section>
+        <div class="modal fade" id="myImageModal">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <img src="" id="imgModalid" alt="img" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </body>
+</html>
